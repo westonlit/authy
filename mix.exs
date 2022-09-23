@@ -4,8 +4,8 @@ defmodule Authy.Mixfile do
   def project do
     [
       app: :authy,
-      version: "0.6.0",
-      elixir: "~> 1.13",
+      version: "0.6.1",
+      elixir: "~> 1.14",
       build_embedded: Mix.env() == :prod,
       start_permanent: Mix.env() == :prod,
       deps: deps()

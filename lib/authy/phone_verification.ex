@@ -20,7 +20,7 @@ defmodule Authy.PhoneVerification do
 
   import Authy.Helpers, only: [parse_response: 1]
   @base_url "/protected/json/phones/verification"
-  @http_client Application.get_env(:authy, :http_client, Authy)
+  @http_client Application.compile_env(:authy, :http_client, Authy)
 
   @doc """
   Request a verification token be sent to a user
